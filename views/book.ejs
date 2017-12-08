@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <title><%=title%></title>
+  <style>
+    html, body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, table, td, th, img, div, dl, dt, dd, input, select, form, fieldset {
+      margin: auto;
+      padding: 0;
+    }
+    html{font:16px/1.5 'microsoft yahei'}
+    .box_con {
+      border: 2px solid #88C6E5;
+      overflow: hidden;
+      width: 976px;
+      margin: 10px auto;
+    }
+    #list {
+      padding: 2px;
+    }
+    #list dl {
+      float: left;
+      overflow: hidden;
+      padding-bottom: 1px;
+      margin: auto;
+      width: 100%;
+    }
+    dl {
+    display: block;
+      -webkit-margin-before: 1em;
+      -webkit-margin-after: 1em;
+      -webkit-margin-start: 0px;
+      -webkit-margin-end: 0px;
+    }
+    #list dt {
+      background: none repeat scroll 0 0 #C3DFEA;
+      display: inline;
+      float: left;
+      font-size: 14px;
+      line-height: 28px;
+      overflow: hidden;
+      text-align: center;
+      vertical-align: middle;
+      width: 98%;
+      margin: auto auto 5px;
+      padding: 5px 10px;
+    }
+    #list dd {
+      border-bottom: 1px dashed #CCC;
+      display: inline;
+      float: left;
+      height: 25px;
+      line-height: 200%;
+      margin-bottom: 5px;
+      overflow: hidden;
+      text-align: left;
+      text-indent: 10px;
+      vertical-align: middle;
+      width: 33%;
+    }
+    body {
+      background-color: rgb(233, 250, 255);
+      color: rgb(85, 85, 85);
+      font-family: "microsoft yahei";
+      font-size: 12px;
+      margin: 0px auto;
+    }
+    a {
+      color: #444;
+      text-decoration: none;
+    }
+    #list dd a:link {
+      color: #444;
+    }
+    #list dd a:visited {
+      color: #6F78A7;
+    }
+    
+    #list dd a:hover {
+      color: #6F78A7;
+    }
+    .cover {
+      width: 99%;
+      margin: 10px auto 10px auto;
+      height: auto;
+      overflow: hidden;
+    }
+    .block {
+      padding-left: 10px;
+      padding-bottom: 10px;
+    }
+    .block_img2 {
+      float: left;
+      height: auto;
+      border: 1px solid #DEDEDE;
+      padding: 5px 5px 0 5px;
+      overflow: hidden;
+    }
+    img {
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+    .block_txt2 {
+      border: 0;
+      height: 130px;
+      overflow: hidden;
+      line-height: 22px;
+    }
+    .cover p {
+    text-indent: 8px;
+}
+.block_txt p, .block_txt2 p {
+    height: auto;
+    font-size: 14px;
+}
+.block_txt h2, .block_txt2 h2 {
+    font-size: 16px;
+    height: auto;
+}
+.ablum_read {
+    height: auto;
+    padding: 5px 0 5px 0;
+    overflow: hidden;
+}
+.ablum_read span {
+    background: #65bbec;
+    border-radius: 3px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 100%;
+    float: left;
+}
+.ablum_read span a {
+    color: #fff;
+    display: block;
+}
+.margin_right {
+    margin-right: 2%;
+}
+.intro {
+    border-bottom: 1px solid #65bbec;
+    background: #ECF0F0;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 8px;
+    font-weight: 700;
+    font-size: 15px;
+    color: #000;
+    margin-top: 5px;
+}
+.intro_info {
+    padding: 10px;
+    font-size: 16px;
+}
+.chapter li {
+    border-bottom: 1px solid #efefef;
+    text-indent: 10px;
+    height: 40px;
+    line-height: 40px;
+    color: #999;
+    overflow: hidden;
+    font-size: 16px;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+.block_txt2 h2 {
+    font-size: 16px;
+    height: auto;
+    padding-left: 8px;
+}
+.margin_right a{font-size: 16px;}
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <div class="block">
+      <div class="block_img2"><img src="http://www.81zw.com/files/article/image/23/23488/23488s.jpg" border="0" width="92" height="116" onerror="this.src='http://www.81zw.com/modules/article/images/nocover.jpg'"></div>
+        <div class="block_txt2">
+          <p><a href="/book/23488/"></a></p><h2><a href="/book/23488/"><%=title%></a></h2><p></p>
+          <p><%=author%></p>
+          <p><%=stats%></p>
+          <p><%=lasttime%></p>
+          <p>最新章节：<a href="<%=recent_chapters[0].local_url%>?bookid=<%=bookid%>"><%=recent_chapters[0].title%></a></p>
+        </div>
+    </div>
+    <div style="clear:both"></div>
+    <div class="ablum_read">
+	    <span class="margin_right"><a href="<%=all_chapters[0].local_url%>?bookid=<%=bookid%>">开始阅读</a></span>
+
+    </div>
+    <div class="intro">简介</div>
+    <div class="intro_info">
+      在破败中崛起，在寂灭中复苏。 沧海成尘，雷电枯竭，那一缕幽雾又一次临近大地，世间的枷锁被打开了，一个全新的世界就此揭开神秘的一角……
+    </div>
+    <div class="intro">最新章节预览</div>
+    <ul class="chapter">
+       <%recent_chapters.forEach(function(recent_chapter){%>
+        <li>
+          <a href="<%=recent_chapter.local_url%>?bookid=<%=bookid%>"><%=recent_chapter.title%></a>
+        </li>
+      <%})%>
+    </ul>
+    <div class="intro">正文</div>
+    <ul class="chapter">
+      <%all_chapters.forEach(function(all_chapter){%>
+        <li>
+          <a href="<%=all_chapter.local_url%>?bookid=<%=bookid%>"><%=all_chapter.title%></a>
+        </li>
+      <%})%>
+    </ul>
+    
+</div>
+</body>
+</html>

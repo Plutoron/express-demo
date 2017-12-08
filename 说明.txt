@@ -1,0 +1,41 @@
+路由 - index.js
+  |1. get,post,url参数获取
+  |
+  |2. 下载,上传文件(multer,formidable)
+  |
+  |3. socket.io测试
+
+路由 - test.js
+  |1. 查询数据库,生成excel文件,发送邮件
+  |
+  |2. 抓取搜狗微信文章
+  |
+  |3. 抓取小说内容
+
+路由 - users.js
+  |1. mysql,sqlserver
+  |
+  |2. redis,mongodb
+
+路由 - auth.js
+  |1. 登陆权限控制
+  |
+  |2. cookie
+
+sample文件夹
+  async
+    回调的几种写法,原生回调地狱,第三方模块callback,promise,asyncawait(6版本还不支持)
+  electron
+    桌面应用测试 - 运行:全局安装electron,然后进入electron目录,执行命令 electron main.js
+  fs
+    读文件,写文件,追加文件
+  http
+    创建服务器,获取页面html,获取接口数据
+  wechatcrawler
+    抓取搜狗微信文章封装
+
+
+package.json没有保存electron模块.npm应该是很难下载,需要cnpm或者淘宝镜像
+
+
+
